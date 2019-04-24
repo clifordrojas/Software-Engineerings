@@ -1,7 +1,7 @@
 package com.hfad.inventoryappfinalproject;
 
 public class Customers {
-
+    private int hello;
     private int id;
     private String username;
     private String zipcode;
