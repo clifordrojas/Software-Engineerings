@@ -33,4 +33,12 @@ public class Parts {
     public void setQOH(String part_qoh) {
         this.part_qoh = part_qoh;
     }
+
+//    public String toString(){
+//        return "Parts{" +
+//                "partid=" + part_num +
+//                ", partname='" + part_name + '\'' +
+//                ", qoh='" + part_qoh + '\''+
+//                '}';
+//    }
 }

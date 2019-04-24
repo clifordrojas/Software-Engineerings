@@ -19,6 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         //Create table
         db.execSQL(DatabaseOptions.CREATE_EMPLOYEES_TABLE_);
         db.execSQL(DatabaseOptions.CREATE_CUSTOMER_TABLE_);
+        db.execSQL(DatabaseOptions.CREATE_PARTS_TABLE_);
     }
 
     @Override
@@ -26,6 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + DatabaseOptions.EMPLOYEES_TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + DatabaseOptions.CUSTOMERS_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + DatabaseOptions.PARTS_TABLE);
         // Create tables again
         onCreate(db);
     }
